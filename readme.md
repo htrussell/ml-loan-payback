@@ -133,22 +133,3 @@ rm playground-series-s5e11.zip
 4. **Model Architecture**:
    * Gradient-boosted decision trees (LightGBM, XGBoost, CatBoost).
    * Soft-voting and rank-averaged ensembling for final prediction generation.
-
----
-
-## 🛠 Feature Engineering Roadmap
-
-- [ ] **Debt Service Burden**:
-  $$\text{installment\_to\_income} = \frac{\text{loan\_amount} \times (\text{interest\_rate} / 100)}{\text{annual\_income}}$$
-- [ ] **Residual Liquidity**:
-  $$\text{disposable\_income} = \text{annual\_income} \times (1 - \text{debt\_to\_income\_ratio})$$
-- [ ] **Risk Multiplier**:
-  $$\text{risk\_burden\_index} = \frac{\text{debt\_to\_income\_ratio} \times \text{interest\_rate}}{\text{credit\_score}}$$
-- [ ] **Hyperparameter Optimization**: Automated Optuna sweeps for learning rate, regularization terms, and tree depth.
-- [ ] **Threshold Tuning**: Optimization of binary classification decision thresholds against validation F1-scores.
-
----
-
-## 📄 License & Acknowledgments
-
-This project is open-source under the [MIT License](LICENSE). Dataset provided by Kaggle as part of the [Playground Series Season 5](https://www.kaggle.com/competitions/playground-series-s5e11).
